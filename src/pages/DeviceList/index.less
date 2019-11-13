@@ -1,0 +1,103 @@
+.deviceList {
+  .main {
+    padding: 10px;
+
+    &>div {
+      background: #FFFFFF;
+    }
+
+    .search {
+      width        : 440px;
+      margin       : 16px auto;
+      border-radius: 19px;
+
+      :global .ant-input {
+        border-radius: 19px;
+      }
+    }
+
+    .statistical {
+      margin   : 10px 0;
+      font-size: 12px;
+      color    : #000000;
+
+      .title {
+        padding-left: 16px;
+        height      : 39px;
+        line-height : 39px;
+        font-size   : 14px;
+      }
+
+      .dashLine {
+        width            : 100%;
+        height           : 1px;
+        background-image : linear-gradient(to right, #E0E0E0 0%, #E0E0E0 50%, transparent 50%);
+        background-size  : 8px 1px;
+        background-repeat: repeat-x;
+      }
+
+      .totalData {
+        display: flex;
+        padding: 8px 0 16px 16px;
+
+        &>div {
+          height         : 66px;
+          display        : flex;
+          flex-direction : column;
+          justify-content: space-between;
+          margin-right   : 159px;
+        }
+
+        .bold {
+          font-size  : 14px;
+          font-weight: bold;
+        }
+
+        .color1 {
+          color: #5AD669;
+        }
+
+        .color2 {
+          color: #E64037;
+        }
+
+        .color3 {
+          color: #FF9000;
+        }
+
+        .color4 {
+          color: #FFC701;
+        }
+      }
+    }
+
+    .status {
+      display      : inline-block;
+      width        : 10px;
+      height       : 10px;
+      background   : #D8D8D8;
+      border-radius: 50%;
+    }
+
+    .online {
+      background: #5AD669;
+    }
+
+
+    .goDetail {
+      width     : 25px;
+      height    : 25px;
+      display   : block;
+      font-size : 16px;
+      text-align: center;
+
+      &:hover {
+        color: #1890FF;
+      }
+    }
+
+    .allow {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+.container {
+  user-select: none;
+}
+
+.maintable {
+  width      : calc(100% - 10px);
+  margin     : 10px;
+  margin-left: 0;
+  position   : relative;
+  background : #FFFFFF;
+}
+
+.download {
+  position     : absolute;
+  bottom       : 0;
+  margin-left  : 25px;
+  margin-bottom: 16px;
+}
+
+.downloadBtn {
+  background   : none;
+  border       : 1px solid #0A2534;
+  border-radius: 4px;
+  font-family  : PingFangSC-Regular;
+  font-size    : 14px;
+  color        : #0A2534;
+  line-height  : 22px;
+}
+
+.downloadBtn[disabled] {
+  background   : none;
+  border       : 1px solid #CACACA;
+  border-radius: 4px;
+  color        : #999999;
+}
+
+.downloadBtn:hover {
+  background: #0A2534;
+  border    : 1px solid #0A2534;
+}
+
+.action {
+  border    : 0;
+  background: none;
+  height    : 20px;
+
+  &:hover {
+    background: none;
+    color     : #1890FF;
+  }
+
+  &:focus {
+    background: none;
+    color     : #1890FF;
+  }
+
+  &:last-child:hover {
+    color: #FF4242;
+  }
+
+  &:last-child:focus {
+    color: #FF4242;
+  }
+}
+
+
+
+.gray {
+  background: #F7FAFB;
+  border    : 1px solid #F4F4F4;
+}
+
+.maintable .gray>td {
+  border: none;
+}
+
+.white {
+  background: #FFFFFF;
+}
+
+.maintable .white>td {
+  border: none;
+}
+
+.fileName {
+  max-width    : 180px;
+  display      : inline-block;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  white-space  : nowrap;
+}
+
+.filePath {
+  max-width    : 290px;
+  display      : inline-block;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  white-space  : nowrap;
+}
+
+@media (min-width: 1440px) {
+  .filePath {
+    max-width    : 750px;
+    display      : inline-block;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    white-space  : nowrap;
+  }
+
+  .fileName {
+    max-width    : 200px;
+    display      : inline-block;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+    white-space  : nowrap;
+  }
+}

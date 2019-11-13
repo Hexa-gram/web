@@ -1,0 +1,61 @@
+.login {
+  min-height     : 100vh;
+  background     : url('@/assets/loginBg@2x.png');
+  background-size: 100% 100%;
+
+  .main {
+    width : 420px;
+    margin: 163px auto 0;
+
+    .title {
+      position: relative;
+
+      &>span {
+        display   : inline-block;
+        width     : 98px;
+        height    : 3px;
+        background: linear-gradient(90deg, rgba(216, 216, 216, 0.00) 0%, #EEEEEE 100%);
+        position  : absolute;
+        left      : -127px;
+        top       : 30px;
+      }
+
+      .rightLine {
+        background: linear-gradient(90deg, #EEEEEE 0%, rgba(216, 216, 216, 0.00) 100%, );
+        position  : absolute;
+        left      : 455px;
+        top       : 30px;
+      }
+
+      &>div {
+        height       : 60px;
+        margin-bottom: 44px;
+        text-align   : justify;
+        color        : #FFFFFF;
+        font-family  : PingFangSC-Light;
+        font-size    : 40px;
+
+        &>i {
+          display: inline-block;
+          width  : 100%;
+        }
+      }
+
+    }
+
+    .input {
+      margin-top: 16px;
+
+
+      &>input {
+        color     : #fff;
+        background: transparent;
+        border    : 1px solid #2E3542;
+      }
+
+      & i {
+        color: #fff;
+      }
+    }
+  }
+}

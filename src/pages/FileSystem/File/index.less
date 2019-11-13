@@ -1,0 +1,81 @@
+.wrap {
+    background: #F3F8FE;
+    padding   : 10px;
+
+    i {
+        display: inline-block;
+    }
+
+
+    
+}
+
+
+
+// 基本信息
+.baseInfo {
+    height         : 50px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    background     : #FFFFFF;
+    padding        : 0 20px;
+    margin-bottom  : 11px;
+
+    li {
+        display        : inline-flex;
+        justify-content: flex-start;
+        align-items    : center;
+
+        h3 {
+            margin        : 0;
+            font-size     : 14px;
+            color         : #333333;
+            letter-spacing: 0;
+            margin-left   : 10px;
+            font-weight   : 600;
+        }
+
+        span {
+            font-size     : 14px;
+            color         : #999999;
+            letter-spacing: 0;
+            margin-left   : 10px;
+        }
+    }
+}
+
+//操作栏
+.actionBar {
+    background     : #FFFFFF;
+    height         : 63px;
+    padding        : 20px 21px 24px;
+    display        : flex;
+    justify-content: flex-start;
+    align-items    : center;
+
+    li {
+        display        : inline-flex;
+        justify-content: flex-start;
+        align-items    : center;
+        color: #979797;
+        &+li{
+            margin-left: 34px;
+        }
+        span {
+            font-size  : 14px;
+            margin-left: 7px;
+
+        }
+        &.disabled {
+            color: #979797;
+        }
+        &.enabled {
+            color: #333333;
+        }
+    }
+}
+// 内容区
+.content{
+
+}
